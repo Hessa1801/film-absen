@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absensi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Halaman Absensi</h1>
+    </header>
+    <main>
+        <section class="form-section">
+            <h2>Absensi Harian</h2>
+            <form id="absensiForm">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="date">Tanggal:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="status">Status Kehadiran:</label>
+                <select id="status" name="status" required>
+                    <option value="hadir">Hadir</option>
+                    <option value="izin">Izin</option>
+                    <option value="sakit">Sakit</option>
+                </select>
+
+                <button type="submit">Kirim</button>
+            </form>
+        </section>
+        <section class="absensi-list">
+            <h2>Data Absensi</h2>
+            <table id="absensiTable">
+                <thead>
+                    <tr>
+                        <th>Nama</th>
+                        <th>Tanggal</th>
+                        <th>Status Kehadiran</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Data absensi akan ditampilkan di sini -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
